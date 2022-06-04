@@ -1,20 +1,15 @@
 ## Stackoverflow clone with Node.js
 
 **Run**
+
 To run this project, download it to your computer and open it with a code editor. Open a `.env` file and firstly give it to `MONGO_URL` information. MONGO_URL gets database connect link. Like that:
 
 `MONGO_URL = mydatabaseconnectlinkexample@mongodb`
 
-And you can run now this project with that command:
+You should enter other information in the `.env` file for token and password reset operations. You can find this information at the end of this document under the name "env file". But it's not must for now.
 
-`npm run start`
+Then you should download the packages that this project depends on from the terminal with the `npm install package_name` command. Dependencies of this project:
 
-
-### 1. stacks:
-    + Back end: Node.js, Express.js
-    + Database: MongoDB
-
-### 2. dependencies:
     + bcryptjs: password encryption operations
     + dotenv: configuration of environment variables
     + express: development back end rest api
@@ -25,7 +20,18 @@ And you can run now this project with that command:
     + nodemailer: sending mail
     + slugify: creating slug
 
-### 3. file structure:
+
+And you can run now this project with that command:
+
+`npm run start`
+
+## Project Informations
+
+### 1. stacks:
+    + Back end: Node.js, Express.js
+    + Database: MongoDB
+
+### 2. file structure:
     + `server.js`: main file
     + `routes`: a folder that uses the express router feature and keeps the route information in it.
     + `controllers`: a folder that contains controller functions for routes.
@@ -37,7 +43,7 @@ And you can run now this project with that command:
     + `package.json`: package.json
     + `package-lock.json`: package-lock.json
 
-### 4. database models:
+### 3. database models:
 
     + `user`: A user model exists in the database. User can sign up with own email and password. User has the "user" role by default. User can optionally add "title, about, place, website" fields. User can view their own profile and upload profile photo. If user forgot his password, he can reset his password. User can create and answer questions.
 
@@ -45,13 +51,13 @@ And you can run now this project with that command:
 
     + `answer`: A answer model exists in the database.
 
-### 5. authentication - authorization
+### 4. authentication - authorization
 
 This project uses JSON Web Token for authentication and authorization. You will receive a token when you log in. When you want to reach certain routes, middleware decodes this token and if the token is valid, it allows you to switch to the route. If you want to test this project in an API Testing tool, you should send token information in headers in route requests. Like that:
 
 `Bearer: {{access_token}}`
 
-### 6. routes
+### 5. routes
 
     + `/api/auth/register`: register
     + `/api/auth/login: login
@@ -86,7 +92,7 @@ This project uses JSON Web Token for authentication and authorization. You will 
     + `api/questions/:question_id/answers/:answer_id/edit`: edit a answer
     + `api/questions/:question_id/answers/:answer_id/delete`: delete a answer
 
-### 7. env file
+### 6. env file
 
 ```
 ## Environment Variables
