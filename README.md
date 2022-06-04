@@ -1,5 +1,15 @@
 ## Stackoverflow clone with Node.js
 
+**Run**
+To run this project, download it to your computer and open it with a code editor. Open a `.env` file and firstly give it to `MONGO_URL` information. MONGO_URL gets database connect link. Like that:
+
+`MONGO_URL = mydatabaseconnectlinkexample@mongodb`
+
+And you can run now this project with that command:
+
+`npm run start`
+
+
 ### 1. stacks:
     + Back end: Node.js, Express.js
     + Database: MongoDB
