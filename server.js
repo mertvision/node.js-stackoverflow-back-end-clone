@@ -10,9 +10,7 @@ const connectDatabase = require("./helpers/database/connectionDatabase.js");
 const customErrorHandler = require("./middlewares/errors/customErrorHandler.js"); 
 
 // Dotenv package configuration. The dotenv package gives us access to the .env file.
-dotenv.config({
-    path: "./env/config.env"
- });
+dotenv.config();
 
 // Database Connect
 connectDatabase();
