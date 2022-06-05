@@ -2,7 +2,7 @@
 
 **Run**
 
-To run this project, download it to your computer and open it with a code editor. Open a `.env` file and firstly give it to `MONGO_URL` information. MONGO_URL gets database connect link. Like that:
+To run this project, download it to your computer and open it with a code editor. Open the `.env` file in the env folder and firstly give it into `MONGO_URL` information. MONGO_URL gets database connect link. Like that:
 
 `MONGO_URL = mydatabaseconnectlinkexample@mongodb`
 
