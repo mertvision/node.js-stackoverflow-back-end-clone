@@ -8,7 +8,7 @@ To run this project, download it to your computer and open it with a code editor
 
 You should enter other information in the `.env` file for token and password reset operations. You can find this information at the end of this document under the name "env file". But it's not must for now.
 
-Then you should download the packages that this project depends on from the terminal with the `npm install package_name` command. Dependencies of this project:
+Then you should download the packages that this project depends on from the terminal with the `npm install` command. Dependencies of this project:
 
     + bcryptjs: password encryption operations
     + dotenv: configuration of environment variables
