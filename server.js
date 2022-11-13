@@ -28,7 +28,7 @@ app.get('/', (req,res)=> {
 
 // Middlewares
 app.use(helmet());
-app.use(morgan(common));
+app.use(morgan("common"));
 app.use(express.json()); // Express.js JSON parser middleware for "req.body" requests.
 app.use(customErrorHandler); // Express.js custom error handler middleware.
 app.use(express.static(path.join(__dirname, "public"))); // Static files.
